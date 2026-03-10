@@ -15,16 +15,20 @@ programa
             leia(candidato)
 			
             se(candidato == 1){
-                candidatoA += 1 porcento+=1
+                candidatoA +=1
+                porcento+=1
                 }
             senao se(candidato == 2){
-                candidatoB += 1 porcento+=1               
+                candidatoB += 1
+                porcento+=1               
                 }
             senao se(candidato == 3){
-                branco += 1 porcento+=1
-            }
+                branco += 1
+                porcento+=1
+           	 }	
             senao se(candidato >=4){    
-                 nulo +=1 porcento+=1
+                 nulo +=1 
+                 porcento+=1
                 
                 }
             }
@@ -32,11 +36,11 @@ programa
 
         limpa()
         escreva("Votação encerrada!")
-        escreva("\nCandidato A: ",candidatoA," porcentagem de votos: ",porcento*candidatoA/4,"%") 
-        escreva("\nCandidato B: ",candidatoB," porcentagem de votos: ",porcento*candidatoB/4,"%")
-        escreva("\nBranco: ",branco," porcentagem de votos: ",porcento*branco/4,"%")
-        escreva("\nNulos: ",nulo," porcentagem de votos: ",porcento*nulo/4,"%")
-	   escreva("\nQuantidade de votos: ",candidatoA+candidatoB+branco+nulo)
+        escreva("\nCandidato A: ",candidatoA," porcentagem de votos: ",(candidatoA*100)/porcento,"%") 
+        escreva("\nCandidato B: ",candidatoB," porcentagem de votos: ",candidatoB*100/porcento,"%")
+        escreva("\nBranco: ",branco," porcentagem de votos: ",branco*100/porcento,"%")
+        escreva("\nNulos: ",nulo," porcentagem de votos: ",nulo*100/porcento,"%")
+	   escreva("\nQuantidade de votos: ",porcento)
 	   
                 
     }
@@ -46,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 634; 
+ * @POSICAO-CURSOR = 987; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
